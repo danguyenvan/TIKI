@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto',
+        sans-serif;
+    background: #efefef;
+}
+
+.mg-b {
+    margin-bottom: 10px;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.header-top {
+
+    background-color: #1ba8ff;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+}
+
+.header-bg img {
+    max-width: 100%;
+}
+
+.bar {
+    width: 10%;
+    display: inline-block;
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+}
+
+.header-top i {
+    color: white;
+
+}
+
+.shoppingcart {
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+    padding-left: 20px;
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+}
+
+.search {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.text-input {
+    line-height: 30px;
+    padding: 0px 32px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.btnsearch {
+    position: absolute;
+    border: 0;
+    background: transparent;
+    top: 6px;
+
+}
+
+.btnsearch i {
+    color: #949294;
+
+}
+
+.box-ads img {
+    max-width: 100%;
+}
+
+/* danh muc san pham */
+.title-list a {
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: #1ba8ff;
+
+}
+
+
+.bg {
+    background: white;
+}
+
+.title-list span {
+    display: block;
+    float: left;
+    font-weight: 600;
+
+
+}
+
+.list-header {
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+.list-first .item {
+    width: 25%;
+    float: left;
+    padding: 0 15px 10px 10px;
+
+}
+
+.item span {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    color: #949294;
+    margin-top: 7px;
+}
+
+.content-service .item {
+    width: 25%;
+    float: left;
+    padding: 0 15px 10px 10px;
+    text-align: center;
+}
+
+.content-service img {
+    width: 66px;
+
+}
+
+.box-app {
+    padding: 10px;
+}
+
+.box-app .item {
+    float: left;
+}
+
+.box-app span {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    color: #313431;
+}
+
+.btn-app {
+    float: left;
+    position: relative;
+    width: 20%;
+}
+
+.btnapp {
+    position: absolute;
+    top: 14px;
+    background: #ff414a;
+    color: white;
+    border: 0;
+    padding: 7px;
+}
+
+.box-event .item {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.box-event span {
+    width: 65%;
+    float: left;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+    color: #313431;
+}
+
+.box-event .icon {
+    float: left;
+    position: relative;
+}
+
+.box-event i {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: #1ba8ff;
+    top: -13px;
+}
+
+.box-event .text {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #313431;
+}
+
+.box-event .subtext {
+    color: #8c8a8c;
+}
+
+.mostsearch {
+    padding: 0px 10px;
+
+}
+
+.mostsearch a {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    margin: 0px 4px 0px 4px;
+    padding: 10px;
+    text-decoration: none;
+    color: #8c8a8c;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+
+}
+
+.mostsearch span {
+    margin-left: 10px;
+}
+
+.list-deal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.list-deal ul li {
+    width: 40%;
+    float: left;
+    padding: 12px 16px;
+
+
+}
+
+.list-deal a {
+    text-decoration: none;
+}
+
+
+
+.list-deal .name {
+    font-size: 13px;
+    line-height: 20px;
+    height: 40px;
+    margin: 0px 0px 4px;
+    overflow: hidden;
+    color: #333333;
+}
+
+.list-deal .price {
+    color: #ff427a;
+
+}
+
+.list-deal .list-price {
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(120, 120, 120);
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.list-deal .discount {
+    font-size: 11px;
+    line-height: 16px;
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+.btn-deal {
+    padding: 0px 16px 12px;
+}
+
+.btn-deal .btnsee {
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    color: #fc424e;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    height: 44px;
+    line-height: 44px;
+    font-weight: 600;
+    background: #f2f2f2;
+}
+
+.list-deal img {
+    max-width: 100%;
+}
+
+.wraper {
+    float: left;
+    width: 50%;
+    margin-right: 15px;
+}
+
+.wraper .app {
+    margin: 16px 0 0 0;
+}
+
+.wraper .title {
+    font-size: 14px;
+    color: #313431;
+}
+
+.wraper button {
+    background: #ff414a;
+    color: white;
+    border: 0;
+    padding: 7px 34px;
+}
+
+footer {
+    padding: 12px 16px;
+}
+
+.title-footer {
+    text-align: center;
+
+}
+
+.content-footer {
+    width: 100%;
+
+}
+
+.content-footer .item {
+    width: 33%;
+    float: left;
+    position: relative;
+
+}
+
+.content-footer .item i {
+    position: absolute;
+    left: 38px;
+    top: 14px;
+    font-size: 30px;
+}
+
+.content-footer span {
+    float: left;
+    font-size: 11px;
+    color: #949294;
+    padding: 46px 14px 33px 4px;
+    margin: 8px 0px 0px;
+}
+
+.ft button {
+    width: 100%;
+    background: #ff414a;
+    color: white;
+    border: 0;
+    padding: 7px;
+}
