@@ -60,11 +60,11 @@ ul {
     position: relative;
     top: 2px;
     font-size: 20px;
-    margin-left: 22px;
+    /* margin-left: 22px; */
 }
 
 .search {
-    width: 70%;
+    width: 77%;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -75,6 +75,7 @@ ul {
     padding: 0px 34px;
     border-radius: 3px;
     border: 0;
+    width: 100%;
 }
 
 .btnsearch {
