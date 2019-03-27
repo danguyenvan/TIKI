@@ -167,8 +167,9 @@ ul {
     display: inline-block;
     text-align: center;
     font-size: 13px;
-    color: #949294;
+    color: #fa6109;
     margin-top: 7px;
+    width: 100%;
 }
 
 .content-service {
@@ -207,6 +208,7 @@ ul {
 
 .box-app {
     padding: 10px;
+    position: relative;
 }
 
 .box-app .item {
@@ -217,7 +219,7 @@ ul {
     width: 50%;
     float: left;
     font-size: 14px;
-    padding: 0 0 0 10px;
+    padding: 12px 0 0 10px;
     color: #313431;
 
 }
@@ -225,18 +227,21 @@ ul {
 .btn-app {
     float: right;
     position: relative;
-    width: 20%;
+    padding-top: 12px
+}
+
+.image {
+    float: right;
 }
 
 .btnapp {
-    position: absolute;
-    top: 14px;
     background: #ff414a;
     color: white;
     border: 0;
     padding: 7px;
 }
 
+/*
 .box-event .item {
     width: 40px;
     height: 40px;
@@ -252,16 +257,14 @@ ul {
 } */
 
 .box-event .icon {
-    float: left;
-    position: relative;
+    float: right;
+    padding-top: 12px
 }
 
 .box-event i {
-    position: absolute;
-    left: 15px;
+
     font-size: 20px;
     color: #1ba8ff;
-    top: 13px;
 }
 
 /* .box-event .text {
@@ -333,7 +336,6 @@ ul {
     font-size: 13px;
     line-height: 20px;
     height: 40px;
-    margin: 0px 0px 4px;
     overflow: hidden;
     color: #333333;
     white-space: normal;
@@ -392,7 +394,6 @@ img {
 .wraper {
     float: left;
     width: 50%;
-    margin-right: 15px;
 }
 
 .wraper .app {
@@ -423,7 +424,7 @@ footer {
 .content-footer {
     width: 100%;
     float: left;
-    display: -webkit-box;
+    /* display: -webkit-box; */
     margin: 20px 0;
 }
 
@@ -470,7 +471,100 @@ This is for sm
     }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .list-product-see .item {
+        width: calc(100%/5 + 7px);
+    }
+
+    .bar {
+        display: inline-block;
+        margin-right: 10px
+    }
+
+    .search {
+        width: 91%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin: 0 2px;
+    }
+
+    .shoppingcart {
+        /* width: 10%; */
+        display: inline-block;
+        text-align: right;
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+    }
+
+    .header-top .shoppingcart i {
+        margin-left: 9px;
+    }
+
+    .text-event {
+        width: 90%;
+        float: left;
+    }
+
+    .box-event .text {
+        font-size: 14px;
+        padding: 0 0 0 15px;
+        color: #313431;
+        text-align: start;
+    }
+
+    .box-event .subtext {
+
+        font-size: 14px;
+        padding: 0 0 0 15px;
+        text-align: start;
+        display: block;
+        float: none;
+
+    }
+
+    .btn-app {
+        float: right;
+        position: relative;
+        padding-top: 15px
+    }
+
+    .box-app .bb {
+        text-align: center;
+        width: 70%;
+        font-size: 14px;
+        padding: 21px 0 0 10px;
+        color: #313431;
+    }
+
+
+    .wraper {
+        float: left;
+        width: 50%;
+        margin-top: 15px;
+    }
+
+    .wraper .app {
+        margin: 14px 0 0 0;
+    }
+
+    .item span {
+
+        display: block;
+    }
+
+    .list-first .item {
+        width: calc(100%/4);
+    }
+
+    .ft .content-footer span {
+        float: none;
+        font-size: 11px;
+        color: #949294;
+        display: block;
+    }
+}
 
 /*
 This is for md
@@ -507,13 +601,10 @@ This is for md
     }
 
     .btnapp {
-        position: absolute;
-        top: -22px;
         background: #ff414a;
         color: white;
         border: 0;
         padding: 7px;
-        left: 91px;
     }
 
     .box-app .bb {
@@ -547,16 +638,9 @@ This is for md
 
     }
 
-    .box-app .item-1 {
-        float: right;
-    }
-
-
-
     .wraper {
         float: left;
         width: 50%;
-        margin-right: 15px;
         margin-top: 15px;
     }
 
@@ -573,11 +657,13 @@ This is for md
         width: calc(100%/6);
     }
 
-    .content-footer span {
+    .ft .content-footer span {
         float: none;
         font-size: 11px;
         color: #949294;
+        display: block;
     }
+
 }
 
 
