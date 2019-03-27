@@ -412,7 +412,7 @@ img {
 }
 
 footer {
-    padding: 12px 16px;
+    padding: 50px 16px;
 }
 
 .title-footer {
@@ -422,7 +422,9 @@ footer {
 
 .content-footer {
     width: 100%;
-
+    float: left;
+    display: -webkit-box;
+    margin: 20px 0;
 }
 
 .content-footer .item {
@@ -433,18 +435,20 @@ footer {
 }
 
 .content-footer .item i {
-    position: absolute;
+
     left: 35px;
     top: 14px;
     font-size: 30px;
+    text-align: center;
+    display: block;
 }
 
 .content-footer span {
     float: left;
     font-size: 11px;
     color: #949294;
-    padding: 46px 14px 33px 4px;
-    margin: 8px 0px 0px;
+    /* padding: 46px 14px 33px 4px;
+    margin: 8px 0px 0px; */
 }
 
 .ft button {
@@ -569,6 +573,11 @@ This is for md
         width: calc(100%/6);
     }
 
+    .content-footer span {
+        float: none;
+        font-size: 11px;
+        color: #949294;
+    }
 }
 
 
