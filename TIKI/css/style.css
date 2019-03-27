@@ -9,6 +9,10 @@ body {
     background: #efefef;
 }
 
+img {
+    vertical-align: top;
+}
+
 .mg-b {
     margin-bottom: 10px;
 }
@@ -24,10 +28,11 @@ body {
     background-color: #1ba8ff;
     height: 50px;
     padding: 10px 10px 0 10px;
+    text-align: center;
 }
 
 .header-bg img {
-    max-width: 100%;
+    width: 100%;
 }
 
 ol,
@@ -38,9 +43,7 @@ ul {
 }
 
 .bar {
-    width: 10%;
-    display: inline-block;
-    width: 10%;
+
     display: inline-block;
     position: relative;
     top: 2px;
@@ -54,7 +57,7 @@ ul {
 }
 
 .shoppingcart {
-    width: 10%;
+    /* width: 10%; */
     display: inline-block;
     text-align: right;
     position: relative;
@@ -68,6 +71,7 @@ ul {
     display: inline-block;
     position: relative;
     text-align: center;
+    margin: 0 12px;
 }
 
 .text-input {
@@ -92,17 +96,30 @@ ul {
 }
 
 .box-ads img {
-    max-width: 100%;
+    width: 100%;
+}
+
+.list {
+    margin-bottom: 10px;
+    white-space: nowrap;
+
 }
 
 /* danh muc san pham */
 .list-product {
-    overflow-y: auto;
+
     white-space: nowrap;
 }
 
 .list-product .list-deal {
     white-space: nowrap;
+    overflow-y: auto;
+}
+
+.text-event {
+    float: left;
+    width: 74%;
+    line-height: 23px;
 }
 
 .title-list a {
@@ -110,6 +127,7 @@ ul {
     float: right;
     text-decoration: none;
     color: #1ba8ff;
+    font-size: 13px;
 
 }
 
@@ -126,14 +144,13 @@ ul {
 
 }
 
+.list-first {
+    overflow-y: auto;
+}
+
 .list-header {
     padding: 12px 16px;
     font-size: 15px;
-}
-
-.list-first {
-    white-space: nowrap;
-    padding-bottom: 10px;
 }
 
 .list-first .item {
@@ -147,7 +164,7 @@ ul {
 }
 
 .item span {
-    float: left;
+    display: inline-block;
     text-align: center;
     font-size: 13px;
     color: #949294;
@@ -175,7 +192,7 @@ ul {
 }
 
 .content-service .item {
-    width: calc(100%/3);
+    width: 112px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -196,16 +213,17 @@ ul {
     float: left;
 }
 
-.box-app span {
+.box-app .bb {
     width: 50%;
     float: left;
     font-size: 14px;
     padding: 0 0 0 10px;
     color: #313431;
+
 }
 
 .btn-app {
-    float: left;
+    float: right;
     position: relative;
     width: 20%;
 }
@@ -225,13 +243,13 @@ ul {
     margin-left: 10px;
 }
 
-.box-event span {
+/* .box-event span .text {
     width: 65%;
     float: left;
     font-size: 14px;
     padding: 0 0 0 15px;
     color: #313431;
-}
+} */
 
 .box-event .icon {
     float: left;
@@ -243,17 +261,32 @@ ul {
     left: 15px;
     font-size: 20px;
     color: #1ba8ff;
-    top: -13px;
+    top: 13px;
 }
 
-.box-event .text {
+/* .box-event .text {
     font-weight: 500;
     margin-bottom: 5px;
     color: #313431;
-}
+    text-align: start;
+} */
 
 .box-event .subtext {
     color: #8c8a8c;
+    /* width: 50%; */
+    float: left;
+    font-size: 13px;
+    padding: 0 0 0 10px;
+    text-align: start;
+}
+
+.box-event .text {
+    color: #8c8a8c;
+    /* width: 50%;
+    float: left; */
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    color: #313431;
 }
 
 .box-mostsearch {
@@ -289,8 +322,9 @@ ul {
 .list-deal .item {
     text-decoration: none;
     display: inline-block;
-    width: 160px;
     padding: 12px 16px;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -351,7 +385,7 @@ ul {
     background: #f2f2f2;
 }
 
-.list-deal img {
+img {
     max-width: 100%;
 }
 
@@ -420,3 +454,131 @@ footer {
     border: 0;
     padding: 7px;
 }
+
+
+/*
+This is for sm
+
+*/
+@media (min-width: 320px) {
+    .list-product-see .item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 576px) {}
+
+/*
+This is for md
+*/
+@media (min-width: 768px) {
+    .list-product-see .item {
+        width: calc(100%/5 + 7px);
+    }
+
+    .bar {
+        display: inline-block;
+        margin-right: 10px
+    }
+
+    .search {
+        width: 91%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin: 0 2px;
+    }
+
+    .shoppingcart {
+        /* width: 10%; */
+        display: inline-block;
+        text-align: right;
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+    }
+
+    .header-top .shoppingcart i {
+        margin-left: 9px;
+    }
+
+    .btnapp {
+        position: absolute;
+        top: -22px;
+        background: #ff414a;
+        color: white;
+        border: 0;
+        padding: 7px;
+        left: 91px;
+    }
+
+    .box-app .bb {
+        width: 78%;
+        float: left;
+        font-size: 14px;
+        padding: 20px 0 0 10px;
+        color: #313431;
+        text-align: center;
+    }
+
+    .text-event {
+        width: 90%;
+        float: left;
+    }
+
+    .box-event .text {
+        font-size: 14px;
+        padding: 0 0 0 15px;
+        color: #313431;
+        text-align: start;
+    }
+
+    .box-event .subtext {
+
+        font-size: 14px;
+        padding: 0 0 0 15px;
+        text-align: start;
+        display: block;
+        float: none;
+
+    }
+
+    .box-app .item-1 {
+        float: right;
+    }
+
+
+
+    .wraper {
+        float: left;
+        width: 50%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .wraper .app {
+        margin: 14px 0 0 0;
+    }
+
+    .item span {
+
+        display: block;
+    }
+
+    .list-first .item {
+        width: calc(100%/6);
+    }
+
+}
+
+
+/*
+This is for lg
+*/
+@media (min-width: 992px) {}
+
+
+/*
+This is for xl
+*/
+@media (min-width: 1024px) {}
